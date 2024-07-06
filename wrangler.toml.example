@@ -1,0 +1,15 @@
+name = "window-monitoring"
+main = "src/index.ts"
+compatibility_date = "2022-07-26"
+
+kv_namespaces = [
+  { binding = "KV", id = "XXXXXXXXXXXXX", preview_id = "XXXXXXXXXXXXX" }
+]
+
+[triggers]
+crons = ["*/1 * * * *"]
+
+[vars]
+OPEN_BUTTON_IMSI = "440521234567890"
+CLOSE_BUTTON_IMSI = "440521234567891"
+WINDOW_OPEN_THRESHOLD_MS = "180000"
